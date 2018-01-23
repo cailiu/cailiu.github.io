@@ -101,6 +101,13 @@ png/gif是无损压缩，jpg/jpg-baseline是有损压缩。大多数JPEG图像�
 
 在指定位置添加标记。可以有多个markers。一个markers中的多个参数用|（%7C）分隔。多个标记只要样式相同，就可以放置在同一个markers参数中。如果指定了markers，则可以无需指定center/zoom参数。
 
+{% capture images %}
+	https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png
+	https://cloud.githubusercontent.com/assets/754514/14509717/61ad05ae-01d6-11e6-85ae-5a817dd8763b.png
+	https://cloud.githubusercontent.com/assets/754514/14509714/61a89708-01d6-11e6-8fcd-74b002a060df.png
+{% endcapture %}
+{% include gallery images=images caption="Screenshots of Moon Theme" cols=3 %}
+
 例如以故宫的经纬度获取地图：
 
 {% capture images %}
