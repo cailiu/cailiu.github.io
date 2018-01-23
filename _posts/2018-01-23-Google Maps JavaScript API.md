@@ -20,7 +20,7 @@ google地图在web网页中的应用在帮助文档中已经有具体说明，�
 ```html
 <script src="//maps.google.cn/maps/api/js?key=AIzaSyCng1A56xxHZNrmC9eEnLoYDjKxAF9uJ3M&language=zh-cn" type="text/javascript"></script>
 ```
-文档是使用的API链接在国内都是无法访问，可以将域名改为`maps.google.cn`即可正常访问
+文档中使用的API链接在国内无法访问的，可以将域名改为`maps.google.cn`即可正常访问
 
 ---
 ###### 标记类聚
