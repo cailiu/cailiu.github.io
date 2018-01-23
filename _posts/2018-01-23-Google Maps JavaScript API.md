@@ -26,7 +26,7 @@ google地图在web网页中的应用在帮助文档中已经有具体说明，�
 ###### 标记类聚
 在有些地图API中也叫点聚合，类似效果如图
 <figure class="third">
-	<img src="assets/img/map/map.png">
+	<img src="/assets/img/map/map.png">
 	<figcaption>Google maps 标记类聚</figcaption>
 </figure>
 
@@ -68,7 +68,7 @@ API接口：http://maps.google.cn/maps/api/staticmap
 例如显示以北京为中心的一个静态地图：
 
 <figure class="third">
-	<img src="assets/img/map/map_1.png">
+	<img src="/assets/img/map/map_1.png">
 	<figcaption>北京地图</figcaption>
 </figure>
 
@@ -110,8 +110,8 @@ png/gif是无损压缩，jpg/jpg-baseline是有损压缩。大多数JPEG图像�
 例如以故宫的经纬度获取地图：
 
 <figure class="third">
-	<img src="assets/img/map/map_2.png">
-    <img src="assets/img/map/map_3.png">
+	<img src="/assets/img/map/map_2.png">
+    <img src="/assets/img/map/map_3.png">
 	<figcaption>标记故宫</figcaption>
 </figure>
 
@@ -136,7 +136,7 @@ path=pathStyles|pathLocation1|pathLocation2|...
 例如划一道从北京到成都的线：
 
 <figure class="third">
-	<img src="assets/img/map/map_4.png">
+	<img src="/assets/img/map/map_4.png">
 	<figcaption>北京到成都</figcaption>
 </figure>
 
@@ -149,8 +149,8 @@ http://maps.google.cn/maps/api/staticmap?zoom=4&size=256x256&path=Beijing%7CChen
 北京-成都-上海的连线：
 
 <figure class="third">
-	<img src="assets/img/map/map_5.png">
-    <img src="assets/img/map/map_6.png">
+	<img src="/assets/img/map/map_5.png">
+    <img src="/assets/img/map/map_6.png">
 	<figcaption>北京-成都-上海的连线</figcaption>
 </figure>
 
@@ -166,7 +166,7 @@ http://maps.google.cn/maps/api/staticmap?zoom=4&size=256x256&path=color:red%7CBe
 Google静态地图API详解 - ShaneJhu - 逆风的方向 更适合飞翔
 
 <figure class="third">
-	<img src="assets/img/map/map_7.png">
+	<img src="/assets/img/map/map_7.png">
 	<figcaption>绘制上海的经济辐射区域</figcaption>
 </figure>
 
