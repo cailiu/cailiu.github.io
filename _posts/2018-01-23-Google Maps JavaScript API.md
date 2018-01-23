@@ -99,7 +99,7 @@ png/gif是无损压缩，jpg/jpg-baseline是有损压缩。大多数JPEG图像�
 
 <kbd>markers</kbd>
 
-在指定位置添加标记。可以有多个markers。一个markers中的多个参数用|（%7C）分隔。多个标记只要样式相同，就可以放置在同一个markers参数中。如果指定了markers，则可以无需指定center/zoom参数。
+在指定位置添加标记。可以有多个markers。一个markers中的多个参数用“|（%7C）”分隔。多个标记只要样式相同，就可以放置在同一个markers参数中。如果指定了markers，则可以无需指定center/zoom参数。
 
 例如以故宫的经纬度获取地图：
 
