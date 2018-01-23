@@ -103,7 +103,7 @@ png/gif是无损压缩，jpg/jpg-baseline是有损压缩。大多数JPEG图像�
 
 例如以故宫的经纬度获取地图：
 
-![image](http://maps.google.cn/maps/api/staticmap?zoom=13&size=256x256&markers=39.917110,116.396971&maptype=roadmap&language=zh-CN&sensor=false) ![image](http://maps.google.cn/maps/api/staticmap?zoom=13&size=256x256&markers=color:blue%7Clabel:G%7C39.917110,116.396971&maptype=roadmap&language=zh-CN&sensor=false)
+![image](http://maps.google.cn/maps/api/staticmap?zoom=13&size=256x256&markers=39.917110,116.396971&maptype=roadmap&language=zh-CN&sensor=false)![image](http://maps.google.cn/maps/api/staticmap?zoom=13&size=256x256&markers=color:blue%7Clabel:G%7C39.917110,116.396971&maptype=roadmap&language=zh-CN&sensor=false)
 
 代码：
 ```
@@ -134,7 +134,7 @@ http://maps.google.cn/maps/api/staticmap?zoom=4&size=256x256&path=Beijing%7CChen
 ```
 北京-成都-上海的连线：
 
-![image](http://maps.google.cn/maps/api/staticmap?zoom=4&size=256x256&path=Beijing%7CChengdu&path=Chengdu%7CShanghai&path=Shanghai%7CBeijing&maptype=roadmap&language=zh-CN&sensor=false) ![image](http://maps.google.cn/maps/api/staticmap?zoom=4&size=256x256&path=color:red%7CBeijing%7CChengdu&path=color:purple%7CChengdu%7CShanghai&path=Shanghai%7CBeijing&maptype=roadmap&language=zh-CN&sensor=false)
+![image](http://maps.google.cn/maps/api/staticmap?zoom=4&size=256x256&path=Beijing%7CChengdu&path=Chengdu%7CShanghai&path=Shanghai%7CBeijing&maptype=roadmap&language=zh-CN&sensor=false)![image](http://maps.google.cn/maps/api/staticmap?zoom=4&size=256x256&path=color:red%7CBeijing%7CChengdu&path=color:purple%7CChengdu%7CShanghai&path=Shanghai%7CBeijing&maptype=roadmap&language=zh-CN&sensor=false)
 
 代码（分别用默认样式与自定义样式绘制）：
 ```
