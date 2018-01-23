@@ -46,7 +46,8 @@ GitHub 上的 [Google 地图存储区](https://github.com/googlemaps/js-marker-c
 API接口：http://maps.google.cn/maps/api/staticmap?zoom=13&size=500x300&markers=39.917110,116.396971&maptype=roadmap&language=zh-CN&sensor=false
 
 
-参数详解\
+参数详解
+
 参数分为几类：
 
 - 位置参数：如center, zoom，没有标记（markers）时为必填。
@@ -54,7 +55,7 @@ API接口：http://maps.google.cn/maps/api/staticmap?zoom=13&size=500x300&marker
 - 特征参数：如markers, path, visible, style。
 - 报告参数：如seneor（是否使用传感器定位用户）。
 
-==center==
+<kbd>center</kbd>
 
 定义地图中心，到地图各边缘的距离等。格式可以是{纬度,经度}或字符串地址，可以唯一标识地球表面的具体位置。
 
