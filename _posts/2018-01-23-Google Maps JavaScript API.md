@@ -43,8 +43,7 @@ GitHub 上的 [Google 地图存储区](https://github.com/googlemaps/js-marker-c
 以下内容来源于[csdn博客](http://blog.csdn.net/u011393661/article/details/14130109)
 ，API域名稍作调整
 
-API接口：http://maps.google.cn/maps/api/staticmap?zoom=13&size=500x300&markers=39.917110,116.396971&maptype=roadmap&language=zh-CN&sensor=false
-
+API接口：http://maps.google.cn/maps/api/staticmap
 
 参数详解
 
@@ -71,21 +70,21 @@ API接口：http://maps.google.cn/maps/api/staticmap?zoom=13&size=500x300&marker
 ```html
 <img src="http://maps.google.cn/maps/api/staticmap?center=Beijing&zoom=9&size=256x256&maptype=roadmap&language=zh-CN&sensor=false">
 ```
-==zoom==
+<kbd>zoom</kbd>
 
 定义地图缩放级别，指定当前试图的分辨率，取值范围是[0,21+]，0表示最低缩放，在地图上可见整个世界，21+可以看到建筑物个体。
 
-==size==
+<kbd>size</kbd>
 
 指定地图图片矩形尺寸，使用 widthxheight 的形式。大小限制为 640x640。
 
-==format==
+<kbd>format</kbd>
 
 指定图片格式，默认用PNG图像，可选格式包括：png8/png（默认）、png32, gif, jpg, jpg-baseline（非渐进式JPEG压缩格式）。
 
 png/gif是无损压缩，jpg/jpg-baseline是有损压缩。大多数JPEG图像采用渐进式载入，即先载入较为粗糙的图像，再随着更多数据的传入而提高图像分辨率，这样可以快速加载网页。但JPEG的某些应用，例如打印要求非渐进式（基线）图片，此时需要选择jpg-baseline格式。
 
-==maptype==
+<kbd>maptype</kbd>
 
 定义地图类型，其值可以是：
 
@@ -94,18 +93,17 @@ png/gif是无损压缩，jpg/jpg-baseline是有损压缩。大多数JPEG图像�
 - `terrain` 指定自然地形地图，显示地形和植被。
 - `hybrid` 指定卫星和路线图的混合图片，在卫星图片上显示主要街道和地址名称的透明层。
 
-==language==
+<kbd>language</kbd>
 
 指定地图上标记的显示语言。
 
-==markers==
+<kbd>markers</kbd>
 
 在指定位置添加标记。可以有多个markers。一个markers中的多个参数用|（%7C）分隔。多个标记只要样式相同，就可以放置在同一个markers参数中。如果指定了markers，则可以无需指定center/zoom参数。
 
 例如以故宫的经纬度获取地图：
 
-![image](http://maps.google.cn/maps/api/staticmap?zoom=13&size=256x256&markers=39.917110,116.396971&maptype=roadmap&language=zh-CN&sensor=false)
-![image](http://maps.google.cn/maps/api/staticmap?zoom=13&size=256x256&markers=color:blue%7Clabel:G%7C39.917110,116.396971&maptype=roadmap&language=zh-CN&sensor=false)
+![image](http://maps.google.cn/maps/api/staticmap?zoom=13&size=256x256&markers=39.917110,116.396971&maptype=roadmap&language=zh-CN&sensor=false) ![image](http://maps.google.cn/maps/api/staticmap?zoom=13&size=256x256&markers=color:blue%7Clabel:G%7C39.917110,116.396971&maptype=roadmap&language=zh-CN&sensor=false)
 
 代码：
 ```
@@ -114,7 +112,7 @@ http://maps.google.cn/maps/api/staticmap?zoom=13&size=256x256&markers=39.917110,
 http://maps.google.cn/maps/api/staticmap?zoom=13&size=256x256&markers=color:blue%7Clabel:G%7C39.917110,116.396971&maptype=roadmap&language=zh-CN&sensor=false
 ```
 
-==path==
+<kbd>path</kbd>
 
 定义图片上叠加层的两个或多个连接点的单条路径。格式为：
 
@@ -136,8 +134,7 @@ http://maps.google.cn/maps/api/staticmap?zoom=4&size=256x256&path=Beijing%7CChen
 ```
 北京-成都-上海的连线：
 
-![image](http://maps.google.cn/maps/api/staticmap?zoom=4&size=256x256&path=Beijing%7CChengdu&path=Chengdu%7CShanghai&path=Shanghai%7CBeijing&maptype=roadmap&language=zh-CN&sensor=false)
-![image](http://maps.google.cn/maps/api/staticmap?zoom=4&size=256x256&path=color:red%7CBeijing%7CChengdu&path=color:purple%7CChengdu%7CShanghai&path=Shanghai%7CBeijing&maptype=roadmap&language=zh-CN&sensor=false)
+![image](http://maps.google.cn/maps/api/staticmap?zoom=4&size=256x256&path=Beijing%7CChengdu&path=Chengdu%7CShanghai&path=Shanghai%7CBeijing&maptype=roadmap&language=zh-CN&sensor=false) ![image](http://maps.google.cn/maps/api/staticmap?zoom=4&size=256x256&path=color:red%7CBeijing%7CChengdu&path=color:purple%7CChengdu%7CShanghai&path=Shanghai%7CBeijing&maptype=roadmap&language=zh-CN&sensor=false)
 
 代码（分别用默认样式与自定义样式绘制）：
 ```
@@ -157,11 +154,11 @@ Google静态地图API详解 - ShaneJhu - 逆风的方向 更适合飞翔
 http://maps.google.com/maps/api/staticmap?zoom=6&size=256x256&path=fillcolor:yellow%7CShanghai%7CYangzhou%7CNanjing%7CHangzhou%7CShanghai&maptype=roadmap&language=zh-CN&sensor=false
 ```
 
-==visible==
+<kbd>visible</kbd>
 
 指定一个位置，即使不显示标记或其他指示器也应该在地图上保持可见。用此参数确保在静态地图上显示某些特征或地图位置。
 
-==style==
+<kbd>style</kbd>
 
 用于自定义样式以更改地图的特定地图项（如道路、公园等）的显示方式。可以添加多个style参数。格式：
 
@@ -190,7 +187,7 @@ style的参数：
 - inverse_lightness:true 颠倒现有的亮度。
 visibility（on, off, simplified）用于表示元素是否在地图上出现及其出现方式。
 
-==sensor==
+<kbd>sensor</kbd>
 
 sensor（必填）是否使用传感器确定用户位置，可以设置为true或false。
 
