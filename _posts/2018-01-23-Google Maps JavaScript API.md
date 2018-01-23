@@ -25,7 +25,12 @@ google地图在web网页中的应用在帮助文档中已经有具体说明，�
 ---
 ###### 标记类聚
 在有些地图API中也叫点聚合，类似效果如图
-![image](https://camo.githubusercontent.com/1ecd53fad1537e38223f73225865c62d49573ff2/68747470733a2f2f676f6f676c656d6170732e6769746875622e696f2f6a732d6d61726b65722d636c757374657265722f73637265656e73686f742e706e67)
+{% highlight html %}
+<figure class="third">
+	<img src="assets/img/map/map.png">
+	<figcaption>Google maps 标记类聚</figcaption>
+</figure>
+{% endhighlight %}
 
 GitHub 上的 [Google 地图存储区](https://github.com/googlemaps/js-marker-clusterer/blob/gh-pages/src/markerclusterer.js)提供了 `MarkerClusterer` 的 JavaScript 内容库和图片文件。将 GitHub 上的下列文件下载或复制到一个应用可访问的位置：
 -  [markerclusterer.js](https://github.com/googlemaps/js-marker-clusterer/blob/gh-pages/src/markerclusterer.js)
@@ -63,8 +68,12 @@ API接口：http://maps.google.cn/maps/api/staticmap
 字符串地址的格式如 City Hall,New York,NY 的形式。发送请求前需使用字符串转义，使之编码为如 City+Hall,New+York,NY 的形式。
 
 例如显示以北京为中心的一个静态地图：
-
-![image](http://maps.google.cn/maps/api/staticmap?center=Beijing&zoom=9&size=256x256&maptype=roadmap&language=zh-CN&sensor=false)
+{% highlight html %}
+<figure class="third">
+	<img src="assets/img/map/map_1.png">
+	<figcaption>北京地图</figcaption>
+</figure>
+{% endhighlight %}
 
 代码：
 ```html
@@ -102,8 +111,13 @@ png/gif是无损压缩，jpg/jpg-baseline是有损压缩。大多数JPEG图像�
 在指定位置添加标记。可以有多个markers。一个markers中的多个参数用&#124;（%7C）分隔。多个标记只要样式相同，就可以放置在同一个markers参数中。如果指定了markers，则可以无需指定center/zoom参数。
 
 例如以故宫的经纬度获取地图：
-
-![image](http://maps.google.cn/maps/api/staticmap?zoom=13&size=256x256&markers=39.917110,116.396971&maptype=roadmap&language=zh-CN&sensor=false)![image](http://maps.google.cn/maps/api/staticmap?zoom=13&size=256x256&markers=color:blue%7Clabel:G%7C39.917110,116.396971&maptype=roadmap&language=zh-CN&sensor=false)
+{% highlight html %}
+<figure class="third">
+	<img src="assets/img/map/map_2.png">
+    <img src="assets/img/map/map_3.png">
+	<figcaption>标记故宫</figcaption>
+</figure>
+{% endhighlight %}
 
 代码：
 ```
@@ -124,7 +138,12 @@ path=pathStyles|pathLocation1|pathLocation2|...
 - `fillcolor` 闭合区域的填充色。
 例如划一道从北京到成都的线：
 
-![北京到成都](http://maps.google.cn/maps/api/staticmap?zoom=4&size=256x256&path=39.917110,116.396971%7C30.665629,104.064978&maptype=roadmap&language=zh-CN&sensor=false)
+{% highlight html %}
+<figure class="third">
+	<img src="assets/img/map/map_4.png">
+	<figcaption>北京到成都</figcaption>
+</figure>
+{% endhighlight %}
 
 代码（以经纬度和字符串形式绘制）：
 ```
@@ -134,7 +153,13 @@ http://maps.google.cn/maps/api/staticmap?zoom=4&size=256x256&path=Beijing%7CChen
 ```
 北京-成都-上海的连线：
 
-![image](http://maps.google.cn/maps/api/staticmap?zoom=4&size=256x256&path=Beijing%7CChengdu&path=Chengdu%7CShanghai&path=Shanghai%7CBeijing&maptype=roadmap&language=zh-CN&sensor=false)![image](http://maps.google.cn/maps/api/staticmap?zoom=4&size=256x256&path=color:red%7CBeijing%7CChengdu&path=color:purple%7CChengdu%7CShanghai&path=Shanghai%7CBeijing&maptype=roadmap&language=zh-CN&sensor=false)
+{% highlight html %}
+<figure class="third">
+	<img src="assets/img/map/map_5.png">
+    <img src="assets/img/map/map_6.png">
+	<figcaption>北京-成都-上海的连线</figcaption>
+</figure>
+{% endhighlight %}
 
 代码（分别用默认样式与自定义样式绘制）：
 ```
@@ -147,7 +172,12 @@ http://maps.google.cn/maps/api/staticmap?zoom=4&size=256x256&path=color:red%7CBe
 
 Google静态地图API详解 - ShaneJhu - 逆风的方向 更适合飞翔
 
-![image](http://maps.google.cn/maps/api/staticmap?zoom=6&size=256x256&path=fillcolor:yellow%7CShanghai%7CYangzhou%7CNanjing%7CHangzhou%7CShanghai&maptype=roadmap&language=zh-CN&sensor=false)
+{% highlight html %}
+<figure class="third">
+	<img src="assets/img/map/map_7.png">
+	<figcaption>绘制上海的经济辐射区域</figcaption>
+</figure>
+{% endhighlight %}
 
 代码：
 ```
