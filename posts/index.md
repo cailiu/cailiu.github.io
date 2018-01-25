@@ -1,6 +1,6 @@
 ---
 layout: post-list
-title: 归档
+title: 文章列表
 excerpt: "文章列表"
 comments: false
 ---
