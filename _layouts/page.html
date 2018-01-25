@@ -25,20 +25,7 @@ layout: compress
             </div>
         </div>
         {% if page.comments %}
-        <section id="comment" class="animated fadeInUp"></section>
-        <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-        <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-        <script>
-        var gitment = new Gitment({
-          owner: 'cailiu',
-          repo: 'comment',
-          oauth: {
-            client_id: '36e5344e5da16c135c96',
-            client_secret: '6c48e054d8d826baf34102c444e6c1396f2f1f26',
-          },
-        });
-        gitment.render('comment');
-        </script>
+        <section id="comment" class="wrapper animated fadeInUp"></section>        
         {% endif %}
     </header>
     {% include scripts.html %}
