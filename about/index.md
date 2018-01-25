@@ -11,7 +11,7 @@ comments: false
 
 > 本站的使用的模板主题是Taylan Tatlı的[Moon Jekyll Theme](https://taylantatli.github.io/moon-jekyll-theme/)
 
-> 本站中使用的评论插件是[imsun](https://imsun.net/) 的 [Gitment](https://github.com/imsun/gitment)
+> 本站中使用的评论插件是[I'm Sun](https://imsun.net/) 的 [Gitment](https://github.com/imsun/gitment)
 
 
 
